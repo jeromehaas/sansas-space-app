@@ -51,7 +51,6 @@ class Paint {
 		window.addEventListener('resize', () => this.createCanvas());
 
 		document.body.onkeydown = (event) => {
-			console.log(event.keyCode);
 			if (event.keyCode == 32) this.openMenu();
 			if (event.keyCode == 27) this.closeMenu();
 			if (event.keyCode == 83) this.save();
