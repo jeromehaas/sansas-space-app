@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sansas Space | Drawing App</title>
+		<link rel="icon" href="./favicon.png">
+		<meta name="author" content="Jérôme Haas (hello@jeromehaas.ch)">
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+		
+		<div class="paint">
+
+			<canvas class="paint__canvas canvas"></canvas>
+			
+			<div class="paint__sidebar sidebar">
+				<div class="sidebar__colorpicker colorpicker">
+					<div class="colorpicker__item colorpicker__item--grey" data-color="#626162"></div>
+					<div class="colorpicker__item colorpicker__item--white" data-color="#EBEBEB"></div>
+					<div class="colorpicker__item colorpicker__item--red" data-color="#DC1553"></div>
+					<div class="colorpicker__item colorpicker__item--cyan" data-color="#40EAD3"></div>
+					<div class="colorpicker__item colorpicker__item--green" data-color="#A9EB41"></div>
+					<div class="colorpicker__item colorpicker__item--orange" data-color="#EC851D"></div>
+					<div class="colorpicker__item colorpicker__item--violet" data-color="#B01CEB"></div>
+				</div>
+			</div>
+
+			<div class="paint__background-layer background-layer"></div>
+			
+			<div class="paint__menu menu">
+				<div class="menu__inner">
+						<div class="menu__main"></div>
+						<a class="menu__item item item--save" data-color="#DC1553" data-degrees="270" data-action="save">S</a>
+						<a class="menu__item item item--clear" data-color="#40EAD3" data-degrees="325" data-action="clear">C</a>
+						<a class="menu__item item item--paint" data-color="#A9EB41" data-degrees="370" data-action="paint">P</a>
+						<a class="menu__item item item--restore" data-color="#EC851D" data-degrees="415" data-action="erase">E</a>
+						<a class="menu__item item item--download" data-color="#B01CEB" data-degrees="460" data-action="download">D</a>
+				</div>
+			</div>
+
+			<div class="paint__notifier notifier"></div>
+			
+			<script src="./js/main.build.js"></script>
+		</div>
+  </body>
+</html>
+
